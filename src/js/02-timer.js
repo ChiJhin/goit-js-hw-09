@@ -12,6 +12,7 @@ const minute = document.querySelector('[data-minutes]');
 const second = document.querySelector('[data-seconds]');
 
 btnStart.disabled = true;
+let timerId = null;
 
 Notiflix.Notify.init({
   width: '300px',
