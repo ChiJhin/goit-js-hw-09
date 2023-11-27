@@ -17,6 +17,7 @@ formPromise.addEventListener('submit', evt => {
     createPromise(position, passedStep)
       .then(value => {
         Notify.success(value);
+        formPromise.reset();
       })
       .catch(value => {
         Notify.failure(value);
